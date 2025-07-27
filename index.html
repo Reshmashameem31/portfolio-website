@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+   <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+
+
+    <div class="section-one"><h1 class="section-one__name">Reshma Shameem</h1>
+     <p class="section-one__role">Web Developer</p>
+    <a class="section-one__contact" href="Contact.html">Contact</a>
+   <a class="section-one__interest" href="#interests">My Interests</a>
+<a  class="section-one__project" href="#projects">My Projects</a>
+
+</div>
+<div class="container-two">
+    <img src="img.jpeg" alt="girl photo">
+<div class="section-two">
+<h2 class="section-two__title">About Me</h2>
+<P class="section-two__desc">A recent graduate exploring a new path in web development. With no technical background, this journey began purely out of 
+    curiosity and the desire to try something different. Currently learning HTML and CSS through practice and small personal projects. 
+    Though still at the beginning, the goal
+    is to grow step by step and build the confidence and skills needed to create useful, user-friendly websites. Though web development is a completely new and technical 
+    field, the motivation to learn is strong. Exploring how websites work, solving small problems in code, and seeing even a basic layout come to life brings a real sense of joy and progress.
+</P>
+
+</div> <div class="section-three" id="interests"><h2 class="section-three__title">My Interests</h2>
+<ul class="section-three__desc"><li>Web Development</li> <li>Reading books</li><li>Critical writng</li><li>Language learning(French)</li></ul></div>
+ <div class="section-four" id="projects"><h2 class="section-four__title">My projects</h2>
+<ul class="section-four__desc"> <li><h1>Portfolio Website</h1><p>A personal portfolio webpage designed to introduce myself and showcase my learning journey.</p></li><li><h1>Contact Page</h1>
+    <p>A simple contact page built using form elements.</p>
+</li><li><h1>Nostra e-commerce website</h1><p>It is a modern fashion e-commerce website designed as a part of my learning.</p></li></ul></div></div> 
+ <div class="section-five">
+<p class="section-five__title">Social Media:<a href="https://www.instagram.com/">Instagram,</a><a href="https://www.linkedin.com/home/?originalSubdomain=in">
+    Linkedin
+</a></p>
+<p class="section-five__desc">&copy;Reshma Shameem</p> <button id="backToTopBtn">⬆ Back to Top</button></div>
+
+
+</div>
+<script>
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+</body>
+</html>
